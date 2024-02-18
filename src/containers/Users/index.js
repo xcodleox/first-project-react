@@ -5,13 +5,13 @@ import Seta from '../../assets/arrow.svg'
 import Lixeira from '../../assets/trash.svg'
 
 import {useNavigate} from 'react-router-dom'
+import H1 from '../../components/Title'
+import ContainerItens from '../../components/ContainerItens'
+import Button from '../../components/Button'
 
 import {
     Container,
-    H1,
     Image,
-    Button,
-    ContainerItens,
     User,
 } from './style';
 
@@ -46,7 +46,7 @@ function Users() {
     return (
         <Container>
             <Image alt="logo-imagem" src={Avatar} />
-            <ContainerItens>
+            <ContainerItens userContainer={true}>
                 <H1>Usuários</H1>
 
                 <ul>
@@ -60,7 +60,7 @@ function Users() {
                     ))}
                 </ul>
                         
-                 <Button onClick={() => navigate(-1)}>
+                 <Button buttonContainer={true} onClick={() => navigate(-1)}>
                     <img alt="seta" src={Seta} /> Voltar
                 </Button>
                 

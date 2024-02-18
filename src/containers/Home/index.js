@@ -5,15 +5,14 @@ import People from '../../assets/people.svg'
 import Seta from '../../assets/arrow.svg'
 import {useNavigate} from 'react-router-dom'
 
-
+import H1 from '../../components/Title'
+import ContainerItens from '../../components/ContainerItens'
+import Button from '../../components/Button'
 import {
     Container,
-    H1,
     InputLabel,
     Input,
     Image,
-    Button,
-    ContainerItens,
 } from './style';
 
 function App(){
